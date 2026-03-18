@@ -1,7 +1,7 @@
 :root {
     --bg-color: #121212;
     --card-bg: #1e1e1e;
-    --primary: #00f2ea;
+    --primary: #c92289;
     --text-main: #ffffff;
     --text-muted: #a0a0a0;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,7 +59,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 .btn--outline:hover {
     background: var(--primary);
     color: var(--bg-color);
-    box-shadow: 0 0 20px rgba(0, 242, 234, 0.3);
+    box-shadow: 0 0 20px rgba(156, 16, 110, 0.3);
 }
 
 /* Хедер */
@@ -210,7 +210,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     right: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(0, 242, 234, 0.15) 0%, rgba(18, 18, 18, 0) 70%);
+    background: radial-gradient(circle, rgba(175, 26, 138, 0.15) 0%, rgba(18, 18, 18, 0) 70%);
     filter: blur(60px);
     z-index: -1;
 }
@@ -226,8 +226,8 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: rgba(0, 242, 234, 0.1);
-    border: 1px solid rgba(0, 242, 234, 0.2);
+    background: rgba(206, 54, 147, 0.1);
+    border: 1px solid rgba(185, 26, 119, 0.2);
     padding: 6px 16px;
     border-radius: 100px;
     font-size: 0.8rem;
@@ -252,7 +252,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 }
 
 .text-gradient {
-    background: linear-gradient(90deg, #00f2ea, #00c2ba);
+    background: linear-gradient(90deg, #c4157b, #00c2ba);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

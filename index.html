@@ -43,167 +43,186 @@
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="hero__bg-glow"></div>
-            <div class="container hero__container">
-                <div class="hero__content">
-                    <div class="hero__badge" data-aos="fade-down">
-                        <span class="badge__dot"></span> Платформа года в Европе
-                    </div>
-                    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
-                        Технология <span class="text-gradient">нового поколения</span> для вашего обучения
-                    </h1>
-                    <p class="hero__descr" data-aos="fade-up" data-aos-delay="200">
-                        Воплотите мечты в реальность и постройте карьеру, которая работает на вас. 
-                        Мы объединили лучшие практики и передовую цифровую инфраструктуру в <?= $domainTitle ?>.
+<section id="hero" class="hero">
+    <div class="hero__bg-glow"></div>
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__badge" data-aos="fade-down">
+                <span class="badge__dot"></span> Стандарт IT-образования в Европе
+            </div>
+            <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+                <?= $domainTitle ?>: <span class="text-gradient">Интеллектуальный лифт</span> для вашей карьеры
+            </h1>
+            <p class="hero__descr" data-aos="fade-up" data-aos-delay="200">
+                Забудьте о затянутом обучении. Мы объединили экспертную поддержку и передовую цифровую инфраструктуру,
+                чтобы вы построили карьеру, которая работает на вас уже сегодня.
+            </p>
+            <div class="hero__btns" data-aos="fade-up" data-aos-delay="300">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#courses" class="btn btn--outline">Смотреть модули</a>
+            </div>
+
+            <div class="hero__stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <span class="stat-num">12+</span>
+                    <span class="stat-text">Программ роста</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">94%</span>
+                    <span class="stat-text">Успешных кейсов</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__visual" data-aos="zoom-in" data-aos-delay="200">
+            <div class="visual__card" id="scene">
+                <img src="/img/three.jpg" alt="Career Success" class="visual__img">
+                <div class="visual__overlay-card floating-1">
+                    <i data-lucide="bar-chart-3"></i>
+                    <span>High-Load Dev</span>
+                </div>
+                <div class="visual__overlay-card floating-2">
+                    <i data-lucide="brain-circuit"></i>
+                    <span>AI-Архитектура</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="courses" class="courses">
+    <div class="container">
+        <div class="section-head" data-aos="fade-right">
+            <h2 class="section-title">Направления <span class="text-gradient">роста</span></h2>
+            <p class="section-subtitle">Технологии, которые работают на вас. Выберите вектор развития в индустрии 4.0.
+            </p>
+        </div>
+
+        <div class="courses__grid">
+            <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-card__icon"><i data-lucide="layers"></i></div>
+                <h3 class="course-card__title">Frontend Architecture</h3>
+                <p class="course-card__text">Проектирование сложных систем с использованием передовой цифровой
+                    инфраструктуры.</p>
+                <a href="#contact" class="course-card__link">Узнать детали <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-card__icon"><i data-lucide="brain-circuit"></i></div>
+                <h3 class="course-card__title">AI & Neural Logic</h3>
+                <p class="course-card__text">AI-инструменты для реальных задач: от разработки агентов до обучения
+                    нейросетей.</p>
+                <a href="#contact" class="course-card__link">Узнать детали <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="course-card__icon"><i data-lucide="shield-check"></i></div>
+                <h3 class="course-card__title">Cybersecurity & Trust</h3>
+                <p class="course-card__text">Решения, которые меняют правила игры в сфере защиты данных и криптографии.
+                </p>
+                <a href="#contact" class="course-card__link">Узнать детали <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="course-card__icon"><i data-lucide="layout"></i></div>
+                <h3 class="course-card__title">Cognitive UI/UX</h3>
+                <p class="course-card__text">Переосмыслите подход к пользовательскому опыту через призму когнитивных
+                    наук.</p>
+                <a href="#contact" class="course-card__link">Узнать детали <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="about">
+    <div class="container about__grid">
+        <div class="about__sticky">
+            <div class="about__image-wrapper" data-aos="zoom-in">
+                <img src="/img/one.jpg" alt="О школе" class="about__img">
+                <div class="about__floating-label">Est. 2026</div>
+            </div>
+        </div>
+
+        <div class="about__content">
+            <span class="about__label" data-aos="fade-up">О проекте
+                <?= $domainTitle ?>
+            </span>
+            <h2 class="about__title" data-aos="fade-up">Архитектура <br>вашего будущего</h2>
+
+            <div class="about__text-block" data-aos="fade-up">
+                <h3>Экосистема возможностей</h3>
+                <p>В
+                    <?= $domainTitle ?> мы не просто учим коду. Мы создаем среду, где передовая цифровая инфраструктура
+                    становится вашим инструментом. Мы используем методики, доказавшие эффективность на рынках Лондона и
+                    Берлина.
+                </p>
+            </div>
+
+            <div class="about__text-block" data-aos="fade-up">
+                <h3>Глобальный охват</h3>
+                <p>Расширьте горизонты своего влияния. Наши программы адаптации и пассивного дохода синхронизированы с
+                    актуальными реалиями экономики Великобритании и ЕС. Платформа года, которая работает на вас.</p>
+            </div>
+
+            <div class="about__text-block" data-aos="fade-up">
+                <h3>Нулевой порог входа</h3>
+                <p>Легко разобраться без опыта. Пошаговый путь, понятный каждому, позволяет внедрить AI-инструменты в
+                    ваш проект уже на первой неделе. Быстрый и легкий старт — это наш стандарт.</p>
+            </div>
+
+            <div class="about__cta" data-aos="fade-up">
+                <a href="#contact" class="btn btn--dark">Запросить доступ</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="process" class="process">
+    <div class="container">
+        <div class="section-head text-center" data-aos="fade-up">
+            <h2 class="section-title">Ваш <span class="text-gradient">путь</span> к успеху</h2>
+            <p class="section-subtitle mx-auto">Пошаговый алгоритм, понятный каждому. От первого входа до глобального
+                признания.</p>
+        </div>
+
+        <div class="process__list">
+            <div class="process__item" data-aos="fade-up">
+                <div class="process__number">01</div>
+                <div class="process__info">
+                    <h3 class="process__item-title">Мгновенный доступ</h3>
+                    <p class="process__item-text">Подключение за 2 минуты. Получите доступ к вводным модулям и передовой
+                        цифровой инфраструктуре платформы
+                        <?= $domainTitle ?>.
                     </p>
-                    <div class="hero__btns" data-aos="fade-up" data-aos-delay="300">
-                        <a href="#contact" class="btn btn--primary">Начать сейчас</a>
-                        <a href="#courses" class="btn btn--outline">Узнать детали</a>
-                    </div>
-                    
-                    <div class="hero__stats" data-aos="fade-up" data-aos-delay="400">
-                        <div class="stat-item">
-                            <span class="stat-num">12+</span>
-                            <span class="stat-text">IT-направлений</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-num">24/7</span>
-                            <span class="stat-text">Поддержка</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="hero__visual" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="visual__card" id="scene">
-                        <img src="/img/three.jpg" alt="IT Education" class="visual__img">
-                        <div class="visual__overlay-card floating-1">
-                            <i data-lucide="code-2"></i>
-                            <span>Clean Code</span>
-                        </div>
-                        <div class="visual__overlay-card floating-2">
-                            <i data-lucide="cpu"></i>
-                            <span>AI-Инструменты</span>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
-        <section id="courses" class="courses">
-            <div class="container">
-                <div class="section-head" data-aos="fade-right">
-                    <h2 class="section-title">Направления <span class="text-gradient">роста</span></h2>
-                    <p class="section-subtitle">Технологии, которые работают на вас. Выберите свой путь в IT.</p>
-                </div>
-        
-                <div class="courses__grid">
-                    <div class="course-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="course-card__icon"><i data-lucide="layers"></i></div>
-                        <h3 class="course-card__title">Frontend Architecture</h3>
-                        <p class="course-card__text">Создание интерфейсов с использованием передовой цифровой инфраструктуры.</p>
-                        <a href="#contact" class="course-card__link">Узнать детали <i data-lucide="arrow-right"></i></a>
-                    </div>
-        
-                    <div class="course-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="course-card__icon"><i data-lucide="brain-circuit"></i></div>
-                        <h3 class="course-card__title">AI & Data Science</h3>
-                        <p class="course-card__text">AI-инструменты для реальных задач и анализа больших данных.</p>
-                        <a href="#contact" class="course-card__link">Узнать детали <i data-lucide="arrow-right"></i></a>
-                    </div>
-        
-                    <div class="course-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="course-card__icon"><i data-lucide="shield-check"></i></div>
-                        <h3 class="course-card__title">Cybersecurity Expert</h3>
-                        <p class="course-card__text">Решения, которые меняют правила игры в сфере цифровой безопасности.</p>
-                        <a href="#contact" class="course-card__link">Узнать детали <i data-lucide="arrow-right"></i></a>
-                    </div>
-        
-                    <div class="course-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="course-card__icon"><i data-lucide="layout"></i></div>
-                        <h3 class="course-card__title">UI/UX Strategy</h3>
-                        <p class="course-card__text">Переосмыслите подход к развитию пользовательского опыта.</p>
-                        <a href="#contact" class="course-card__link">Узнать детали <i data-lucide="arrow-right"></i></a>
-                    </div>
+
+            <div class="process__item" data-aos="fade-up" data-aos-delay="100">
+                <div class="process__number">02</div>
+                <div class="process__info">
+                    <h3 class="process__item-title">Вектор развития</h3>
+                    <p class="process__item-text">Вместе с ментором вы оцените перспективы проекта и выстроите
+                        индивидуальную стратегию роста на базе инноваций.</p>
                 </div>
             </div>
-        </section>
-        
-        <section id="about" class="about">
-            <div class="container about__grid">
-                <div class="about__sticky">
-                    <div class="about__image-wrapper" data-aos="zoom-in">
-                        <img src="/img/one.jpg" alt="О школе" class="about__img">
-                        <div class="about__floating-label">Est. 2026</div>
-                    </div>
-                </div>
-                
-                <div class="about__content">
-                    <span class="about__label" data-aos="fade-up">О проекте <?= $domainTitle ?></span>
-                    <h2 class="about__title" data-aos="fade-up">Технология <br>нового поколения</h2>
-                    
-                    <div class="about__text-block" data-aos="fade-up">
-                        <h3>Инновационная технология</h3>
-                        <p>Мы не просто учим коду. Мы создаем среду, где передовая цифровая инфраструктура становится доступной каждому. В <?= $domainTitle ?> мы используем методики, доказавшие эффективность на мировом рынке.</p>
-                    </div>
-        
-                    <div class="about__text-block" data-aos="fade-up">
-                        <h3>Расширьте горизонты</h3>
-                        <p>Откройте новые возможности для своего проекта или карьеры. Наши программы пассивного дохода и обучения адаптированы под современные реалии экономики Великобритании и ЕС.</p>
-                    </div>
-        
-                    <div class="about__text-block" data-aos="fade-up">
-                        <h3>Быстрый и лёгкий старт</h3>
-                        <p>Легко разобраться без опыта. Пошаговый путь, понятный каждому, позволяет оценить перспективы проекта уже на первой неделе обучения. Платформа уже доступна в Европе.</p>
-                    </div>
-        
-                    <div class="about__cta" data-aos="fade-up">
-                        <a href="#contact" class="btn btn--dark">Запросить доступ</a>
-                    </div>
+
+            <div class="process__item" data-aos="fade-up" data-aos-delay="200">
+                <div class="process__number">03</div>
+                <div class="process__info">
+                    <h3 class="process__item-title">AI-интенсив</h3>
+                    <p class="process__item-text">Изучайте методологии, доказавшие эффективность. Используйте
+                        AI-инструменты для реальных задач уже в процессе обучения.</p>
                 </div>
             </div>
-        </section>
-        <section id="process" class="process">
-            <div class="container">
-                <div class="section-head text-center" data-aos="fade-up">
-                    <h2 class="section-title">Ваш <span class="text-gradient">путь</span> к успеху</h2>
-                    <p class="section-subtitle mx-auto">Пошаговый путь, понятный каждому. От регистрации до первого оффера.</p>
-                </div>
-        
-                <div class="process__list">
-                    <div class="process__item" data-aos="fade-up">
-                        <div class="process__number">01</div>
-                        <div class="process__info">
-                            <h3 class="process__item-title">Пройти регистрацию</h3>
-                            <p class="process__item-text">Подключение занимает 2 минуты. Вы получаете доступ к вводным модулям и передовой цифровой инфраструктуре <?= $domainTitle ?>.</p>
-                        </div>
-                    </div>
-        
-                    <div class="process__item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="process__number">02</div>
-                        <div class="process__info">
-                            <h3 class="process__item-title">Оценить перспективы проекта</h3>
-                            <p class="process__item-text">Вместе с ментором вы выбираете направление и составляете индивидуальную стратегию роста на базе инноваций.</p>
-                        </div>
-                    </div>
-        
-                    <div class="process__item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="process__number">03</div>
-                        <div class="process__info">
-                            <h3 class="process__item-title">Практики и AI-инструменты</h3>
-                            <p class="process__item-text">Изучайте методологии, доказавшие эффективность. Используйте AI-инструменты для реальных задач уже в процессе обучения.</p>
-                        </div>
-                    </div>
-        
-                    <div class="process__item" data-aos="fade-up" data-aos-delay="300">
-                        <div class="process__number">04</div>
-                        <div class="process__info">
-                            <h3 class="process__item-title">Карьера, которая работает на вас</h3>
-                            <p class="process__item-text">Получите экспертную поддержку на всех этапах трудоустройства в топовые компании Европы и Великобритании.</p>
-                        </div>
-                    </div>
+
+            <div class="process__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="process__number">04</div>
+                <div class="process__info">
+                    <h3 class="process__item-title">Глобальный оффер</h3>
+                    <p class="process__item-text">Ваша карьера, которая работает на вас. Получите экспертную поддержку
+                        при трудоустройстве в топовые компании Великобритании и ЕС.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
         
         <section id="faq" class="faq">
             <div class="container">
